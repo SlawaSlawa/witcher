@@ -1,0 +1,120 @@
+@media (max-width: 760px) {
+    .play {
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .copyright {
+        margin-bottom: 8px;
+        display: block;
+ }
+
+ .footer-link:first-child {
+     margin-left: 0;
+ }
+}
+
+@media (max-width: 540px) {
+    .menu-btn {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        top: 40px;
+        right: 35px;
+        border: none;
+        transition: .3s;
+        cursor: pointer;
+    }
+    .menu-btn:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin-top: -7px;
+        transition: .3s;
+    }
+    .menu-btn:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin-top: 7px;
+        transition: .3s;
+    }
+    .menu-btn-active {
+        height: 0;
+    }
+
+    .menu-btn-active:before {
+        transform: rotate(45deg);
+        margin-top: 0;
+    }
+
+    .menu-btn-active:after {
+        transform: rotate(-45deg);
+        margin-top: 0;
+    }
+
+    .header {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #9d2929;
+        flex-direction: column;
+        width: 250px;
+        padding-bottom: 40px;
+    }
+
+    .header-active {
+        display: flex;
+    }
+
+    .logo {
+        margin-bottom: 25px;
+    }
+
+    .menu-list {
+        margin: auto;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-link {
+        margin-right: 0;
+        margin-bottom: 17px;
+    }
+    .social {
+        order: 1;
+        margin-bottom: 22px;
+    }
+    .social-link:first-child {
+        margin-left: 0;
+    }
+
+    .swiper-container {
+        width: 80%;
+    }
+
+    .main-content {
+        margin-top: 196px;
+    }
+    .main-title {
+        font-size: 56px;
+    }
+
+    .series {
+        width: 80%;
+    }
+}
